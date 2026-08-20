@@ -1,0 +1,22 @@
+hardware:
+  gpu_target: "NVIDIA Tesla T4"
+  vram_total_gb: 16.0
+
+model:
+  id: "ibm-granite/granite-4.1-3b"
+  parameters_billions: 3.4
+  context_window_tokens: 4096
+
+sizing_profiles:
+  fp16:
+    precision_bits: 16
+    weight_memory_gb: 6.8
+    runtime_overhead_gb: 3.0
+    kv_cache_buffer_gb: 6.2
+    target_throughput_tok_per_sec: 17.9
+  int4_awq:
+    precision_bits: 4
+    weight_memory_gb: 1.7
+    runtime_overhead_gb: 2.0
+    kv_cache_buffer_gb: 12.3
+    target_throughput_tok_per_sec: 32.5
