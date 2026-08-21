@@ -124,7 +124,9 @@ aidc-llm-inference-service/
 ├── requirements.txt        # FastAPI, Uvicorn, PyTorch, Transformers
 ├── README.md               # Engineering documentation & benchmarks
 └── src/
+    ├── benchmark.py        # Automated benchmarking & latency measurement
     └── serve_api.py        # Microservice logic, GPU mapping & metrics
+
 ```
 
 ---
